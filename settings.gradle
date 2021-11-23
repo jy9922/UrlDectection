@@ -1,0 +1,2 @@
+rootProject.name = "URsafe"
+include ':app'

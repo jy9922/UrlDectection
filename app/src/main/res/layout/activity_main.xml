@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <!-- 안전한 QR 코드인가요? -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_gravity="center_horizontal"
+        android:text="안전한 QR 코드인가요?"
+        android:fontFamily="@font/roboto_thin"
+        android:textColor="#000000"
+        android:textSize="28dp"
+        android:textStyle="bold"
+         />
+
+    <ImageView
+        android:layout_width="210dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="115dp"
+        android:src="@drawable/qrcheck"
+        />
+
+    <Button
+        android:id="@+id/goBtn"
+        android:layout_width="270dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="QR 체크하러 가기 >"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:backgroundTint="#E9E9E9"
+        android:src="@drawable/rectangle162"
+
+        />
+
+
+</LinearLayout>
