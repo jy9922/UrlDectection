@@ -6,23 +6,24 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import org.tensorflow.lite.Interpreter;
 
-public class MainActivity extends AppCompatActivity {
+public class Camera extends AppCompatActivity {
 
-    private Button scanQRBtn;
+    private ImageView cameraBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_camera);
 
-        scanQRBtn = (Button) findViewById(R.id.goBtn);
+        cameraBtn = (ImageView) findViewById(R.id.camera_button);
 
-        scanQRBtn.setOnClickListener(new View.OnClickListener(){
+        cameraBtn.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(MainActivity.this,Camera.class);
+                Intent intent = new Intent(Camera.this,ScanQR.class);
                 startActivity(intent);
             }
         });

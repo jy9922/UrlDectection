@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.URsafe">
-        <activity android:name=".UrlextractionActivity"></activity>
+<!--        <activity android:name=".UrlextractionActivity"></activity>-->
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"
             android:screenOrientation="fullSensor"
@@ -24,7 +24,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".ScanQR" />
-
+        <activity android:name=".Camera" />
+        <activity android:name=".ModelActivity"/>
+        <activity android:name=".UrlDetection"/>
+        <activity android:name=".UrlSafe"/>
+        <activity android:name=".UrlBad"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
